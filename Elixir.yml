@@ -1,0 +1,84 @@
+attributes:
+  - beginString: \b[a-z_][a-zA-Z0-9_]*\s*(?=\()
+    regularExpression: true
+characters:
+  - beginString: \$\S{1,10}
+    regularExpression: true
+commands:
+  - beginString: \w+(?=\()
+    regularExpression: true
+commentDelimiters:
+  inlineDelimiter: '#'
+comments: []
+completions: []
+extensions:
+  - keyString: ex
+  - keyString: exs
+filenames: []
+interpreters: []
+keywords:
+  - beginString: def
+  - beginString: defp
+  - beginString: defmodule
+  - beginString: defmacro
+  - beginString: defdelegate
+  - beginString: defstruct
+  - beginString: defimpl
+  - beginString: defprotocol
+  - beginString: defguard
+  - beginString: defguardp
+  - beginString: fn
+  - beginString: do
+  - beginString: end
+  - beginString: if
+  - beginString: unless
+  - beginString: case
+  - beginString: cond
+  - beginString: with
+  - beginString: receive
+  - beginString: try
+  - beginString: catch
+  - beginString: rescue
+  - beginString: after
+  - beginString: quote
+  - beginString: unquote
+  - beginString: import
+  - beginString: require
+  - beginString: use
+  - beginString: alias
+  - beginString: true
+  - beginString: false
+  - beginString: nil
+kind: code
+metadata:
+  author: mdarrint
+  distributionURL: https://coteditor.com
+  lastModified: '2025-08-14'
+  license: Same as CotEditor
+  version: 0.1.0
+numbers:
+  - beginString: \b\d+\b
+    regularExpression: true
+  - beginString: \b\d+\.\d+([eE][\-+]?\d+)?\b
+    regularExpression: true
+  - beginString: \b0x[0-9a-fA-F]+\b
+    regularExpression: true
+outlineMenu:
+  - beginString: ^([\t ]*)def(p)?\s+(\w+)\s*(\(.*\))?\s+do
+    description: function
+    keyString: $1$3
+strings:
+  - beginString: '"'
+    endString: '"'
+  - beginString: "'"
+    endString: "'"
+types:
+  - beginString: \b[A-Z][a-zA-Z0-9_]*\b
+    regularExpression: true
+values:
+  - beginString: 'true'
+  - beginString: 'false'
+  - beginString: 'nil'
+variables:
+  - beginString: \b[a-z_][a-zA-Z0-9_]*\b
+    regularExpression: true
